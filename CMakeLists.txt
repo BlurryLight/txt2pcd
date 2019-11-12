@@ -27,14 +27,17 @@ ENDIF(OPENMP_FOUND AND WITH_OPENMP)
 FIND_PACKAGE(OpenCV REQUIRED)
 FIND_PACKAGE(PCL REQUIRED)
 
+#boost
+find_package(Boost 1.40 REQUIRED COMPONENTS program_options)
+
 add_definitions(${PCL_DEFINITIONS})
 
-INCLUDE_DIRECTORIES( ${PCL_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES( ${PCL_INCLUDE_DIRS} ${Boost_INCLUDE_DIR})
 
 
 
 
 add_executable(txt2pcd src/txt2pcd.cpp)
-target_link_libraries(txt2pcd  ${PCL_LIBRARIES})
+target_link_libraries(txt2pcd  ${PCL_LIBRARIES} ${Boost_LIBRARIES})
 
 #ADD_SUBDIRECTORY(ANN_1.1.2)
