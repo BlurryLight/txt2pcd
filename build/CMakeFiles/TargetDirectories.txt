@@ -1,3 +1,0 @@
-/home/suyi/suyi/test4/txt2pcd/txt2pcd/build/CMakeFiles/edit_cache.dir
-/home/suyi/suyi/test4/txt2pcd/txt2pcd/build/CMakeFiles/rebuild_cache.dir
-/home/suyi/suyi/test4/txt2pcd/txt2pcd/build/CMakeFiles/txt2pcd.dir
